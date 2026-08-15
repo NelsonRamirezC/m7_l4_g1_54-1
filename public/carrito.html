@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito | Pastelería Aurora</title>
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="brand">
+                <div class="brand-mark">A</div>
+                <span>Pastelería Aurora</span>
+            </div>
+            <div class="nav-links">
+                <a href="/index.html" data-page="index.html">Inicio</a>
+                <a href="/productos.html" data-page="productos.html">Productos</a>
+                <a href="/usuarios.html" data-page="usuarios.html">Usuarios</a>
+                <a href="/historial.html" data-page="historial.html">Historial</a>
+                <a href="/ventas.html" data-page="ventas.html">Ventas</a>
+                <a href="/carrito.html" data-page="carrito.html" class="active cart-pill">🛒 <span id="cartBadge"
+                        class="badge">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="section-header">
+            <div>
+                <h2>Carrito de compras</h2>
+                <p class="subtle">Revisa tus postres antes del pago</p>
+            </div>
+        </div>
+
+        <div class="detail-shell">
+            <div class="cart-panel">
+                <ul class="cart-list" id="cartList"></ul>
+            </div>
+
+            <aside class="checkout-panel">
+                <h3>Checkout</h3>
+                <form id="checkoutForm">
+                    <div class="field" style="margin-bottom:1rem;">
+                        <label for="usuarioSelect">Cliente</label>
+                        <select id="usuarioSelect" required></select>
+                    </div>
+                    <div class="summary-box" id="subtotalBox"></div>
+                    <div class="btn-row" style="margin-top:1rem;">
+                        <button class="btn btn-primary" type="submit">Confirmar compra</button>
+                        <a class="btn btn-secondary" href="/productos.html">Seguir comprando</a>
+                    </div>
+                </form>
+            </aside>
+        </div>
+    </main>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>

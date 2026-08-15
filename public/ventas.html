@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ventas | Pastelería Aurora</title>
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="brand">
+                <div class="brand-mark">A</div>
+                <span>Pastelería Aurora</span>
+            </div>
+            <div class="nav-links">
+                <a href="/index.html" data-page="index.html">Inicio</a>
+                <a href="/productos.html" data-page="productos.html">Productos</a>
+                <a href="/usuarios.html" data-page="usuarios.html">Usuarios</a>
+                <a href="/historial.html" data-page="historial.html">Historial</a>
+                <a href="/ventas.html" data-page="ventas.html" class="active">Ventas</a>
+                <a href="/carrito.html" data-page="carrito.html" class="cart-pill">🛒 <span id="cartBadge"
+                        class="badge">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="section-header">
+            <div>
+                <h2>Ventas</h2>
+                <p class="subtle">Listado de comprobantes registrados</p>
+            </div>
+        </div>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cliente</th>
+                        <th>RUT</th>
+                        <th>Fecha</th>
+                        <th>Total</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody id="ventasTable"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>

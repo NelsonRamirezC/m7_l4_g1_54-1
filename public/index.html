@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pastelería Aurora | Dashboard</title>
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="brand">
+                <div class="brand-mark">A</div>
+                <span>Pastelería Aurora</span>
+            </div>
+            <div class="nav-links">
+                <a href="/index.html" data-page="index.html" class="active">Inicio</a>
+                <a href="/productos.html" data-page="productos.html">Productos</a>
+                <a href="/usuarios.html" data-page="usuarios.html">Usuarios</a>
+                <a href="/historial.html" data-page="historial.html">Historial</a>
+                <a href="/ventas.html" data-page="ventas.html">Ventas</a>
+                <a href="/carrito.html" data-page="carrito.html" class="cart-pill">🛒 <span id="cartBadge"
+                        class="badge">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-grid">
+                <div>
+                    <h1>Sabores que convierten cada momento en recuerdo.</h1>
+                    <p>
+                        Gestiona clientes, productos y ventas desde una experiencia moderna.
+                        Una boutique de postres con un flujo de compras simple, rápido y elegante.
+                    </p>
+                    <div class="btn-row">
+                        <a class="btn btn-primary" href="/productos.html">Ver productos</a>
+                        <a class="btn btn-secondary" href="/historial.html">Ver historial</a>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <h3>Resumen del día</h3>
+                    <p class="subtle">Venta y atención en tiempo real</p>
+                    <div class="metric-grid" style="margin-top:1rem; grid-template-columns: repeat(2, minmax(0, 1fr));">
+                        <div class="metric">
+                            <span class="label">Pedidos</span>
+                            <span class="value">24</span>
+                        </div>
+                        <div class="metric">
+                            <span class="label">Clientes</span>
+                            <span class="value">18</span>
+                        </div>
+                        <div class="metric">
+                            <span class="label">Top</span>
+                            <span class="value">Tiramisú</span>
+                        </div>
+                        <div class="metric">
+                            <span class="label">Cobranza</span>
+                            <span class="value">$96K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <div>
+                    <h2>Panel general</h2>
+                    <p class="subtle">Indicadores de la API y operaciones</p>
+                </div>
+            </div>
+            <div class="metric-grid" id="dashboardMetrics"></div>
+        </section>
+    </main>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
